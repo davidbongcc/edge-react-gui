@@ -9,7 +9,7 @@ PODS:
     - React
   - disklet (0.4.1):
     - React
-  - DoubleConversion (1.1.5)
+  - DoubleConversion (1.1.6)
   - edge-login-ui-rn (0.5.19):
     - React
   - Firebase/Core (5.3.0):
@@ -26,25 +26,25 @@ PODS:
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
   - FirebaseInstanceID (3.1.1):
     - FirebaseCore (~> 5.0)
-  - Folly (2016.09.26.00):
+  - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
     - glog
-  - glog (0.3.4)
-  - GoogleToolboxForMac/Defines (2.1.0)
-  - "GoogleToolboxForMac/NSData+zlib (2.1.0)":
-    - GoogleToolboxForMac/Defines (= 2.1.0)
-  - nanopb (0.3.8):
-    - nanopb/decode (= 0.3.8)
-    - nanopb/encode (= 0.3.8)
-  - nanopb/decode (0.3.8)
-  - nanopb/encode (0.3.8)
+  - glog (0.3.5)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - "GoogleToolboxForMac/NSData+zlib (2.2.0)":
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
   - Picker (4.3.7):
     - Picker/Core (= 4.3.7)
   - Picker/Core (4.3.7):
     - React
-  - React (0.55.3):
-    - React/Core (= 0.55.3)
+  - React (0.59.2):
+    - React/Core (= 0.59.2)
   - react-native-camera (1.6.4):
     - React
     - react-native-camera/RCT (= 1.6.4)
@@ -80,44 +80,52 @@ PODS:
     - React
   - react-native-webview (3.2.1):
     - React
-  - React/Core (0.55.3):
-    - yoga (= 0.55.3.React)
-  - React/CxxBridge (0.55.3):
-    - Folly (= 2016.09.26.00)
+  - React/Core (0.59.2):
+    - yoga (= 0.59.2.React)
+  - React/CxxBridge (0.59.2):
+    - Folly (= 2018.10.22.00)
     - React/Core
     - React/cxxreact
-  - React/cxxreact (0.55.3):
+    - React/jsiexecutor
+  - React/cxxreact (0.59.2):
     - boost-for-react-native (= 1.63.0)
-    - Folly (= 2016.09.26.00)
-    - React/jschelpers
+    - DoubleConversion
+    - Folly (= 2018.10.22.00)
+    - glog
     - React/jsinspector
-  - React/DevSupport (0.55.3):
+  - React/DevSupport (0.59.2):
     - React/Core
     - React/RCTWebSocket
-  - React/fishhook (0.55.3)
-  - React/jschelpers (0.55.3):
-    - Folly (= 2016.09.26.00)
-    - React/PrivateDatabase
-  - React/jsinspector (0.55.3)
-  - React/PrivateDatabase (0.55.3)
-  - React/RCTAnimation (0.55.3):
+  - React/fishhook (0.59.2)
+  - React/jsi (0.59.2):
+    - DoubleConversion
+    - Folly (= 2018.10.22.00)
+    - glog
+  - React/jsiexecutor (0.59.2):
+    - DoubleConversion
+    - Folly (= 2018.10.22.00)
+    - glog
+    - React/cxxreact
+    - React/jsi
+  - React/jsinspector (0.59.2)
+  - React/RCTAnimation (0.59.2):
     - React/Core
-  - React/RCTBlob (0.55.3):
+  - React/RCTBlob (0.59.2):
     - React/Core
-  - React/RCTImage (0.55.3):
+  - React/RCTImage (0.59.2):
     - React/Core
     - React/RCTNetwork
-  - React/RCTLinkingIOS (0.55.3):
+  - React/RCTLinkingIOS (0.59.2):
     - React/Core
-  - React/RCTNetwork (0.55.3):
+  - React/RCTNetwork (0.59.2):
     - React/Core
-  - React/RCTPushNotification (0.55.3):
+  - React/RCTPushNotification (0.59.2):
     - React/Core
-  - React/RCTSettings (0.55.3):
+  - React/RCTSettings (0.59.2):
     - React/Core
-  - React/RCTText (0.55.3):
+  - React/RCTText (0.59.2):
     - React/Core
-  - React/RCTWebSocket (0.55.3):
+  - React/RCTWebSocket (0.59.2):
     - React/Core
     - React/fishhook
     - React/RCTBlob
@@ -140,7 +148,7 @@ PODS:
     - React/Core
   - RNVectorIcons (6.1.0):
     - React
-  - yoga (0.55.3.React)
+  - yoga (0.59.2.React)
 
 DEPENDENCIES:
   - BugsnagReactNative (from `../node_modules/bugsnag-react-native`)
@@ -268,18 +276,18 @@ SPEC CHECKSUMS:
   BugsnagReactNative: 7ba00c17a3dedfeea4dd011919962d415a231c49
   BVLinearGradient: 0d985ec461359c82bc254f26d11008bdae50d17a
   disklet: 0aca5091512a734c94cdfe2bd575794b38717d9e
-  DoubleConversion: e22e0762848812a87afd67ffda3998d9ef29170c
+  DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
   edge-login-ui-rn: 45b1fd47d821fa31a2d3c4cef2b2c94a13d5e153
   Firebase: 68afeeb05461db02d7c9e3215cda28068670f4aa
   FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
   FirebaseCore: 62f1b792a49bb9e8b4073f24606d2c93ffc352f0
   FirebaseInstanceID: f3f0657372592ecdfdfe2cac604a5a75758376a6
-  Folly: 211775e49d8da0ca658aebc8eab89d642935755c
-  glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
-  GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
-  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Folly: de497beb10f102453a1afa9edbf8cf8a251890de
+  glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Picker: 37554355aef82a532ea95b71b6eeba66bc86182b
-  React: 573d89cf10312b17920df6328eaf9ab8059283bf
+  React: 9d063e2f356c8cd2f54dd550d4507740037cbabe
   react-native-camera: 9547ea9ab91ef13476a4ad79ec329b1fe634df8c
   react-native-contacts: f6e5c518598762081ff9cf7c70db36f71668538e
   react-native-contacts-wrapper: a423605f89dba6b83edf481940736646f97cd25a
@@ -302,7 +310,7 @@ SPEC CHECKSUMS:
   RNShare: 4f206fa36e384e95a0cbf79f2a92490647e93127
   RNSound: a1d01988e043aed5dbb476c2152b5ffb02446750
   RNVectorIcons: ac7bf6bfeafaf3ad34552cdc6eed6fb8c4b7c940
-  yoga: 9403c2451c1b47d8cee3e4f1b6fd0ececc63839c
+  yoga: 3768a3026ade0fb46a68f3a31a917cf86bc34fc4
 
 PODFILE CHECKSUM: b39fe0413b216fc82c3295555b341263251dc082
 
